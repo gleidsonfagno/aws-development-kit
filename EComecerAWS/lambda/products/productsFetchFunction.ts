@@ -12,12 +12,12 @@ export async function handler(
     const lambdaRequest = context.awsRequestId
     const apiRequestId = event.requestContext.requestId
 
-    console.log(`API gateway Request: ${apiRequestId} - Lambda RequestId: ${lambdaRequest}`)
+    // console.log(`API gateway Request: ${apiRequestId} - Lambda RequestId: ${lambdaRequest}`)
   const method = event.httpMethod;
 
   if (event.resource === "/products") {
     if (method === "GET") {
-        console.log("GET")
+        // console.log("GET")
 
         return {
             statusCode: 200,
